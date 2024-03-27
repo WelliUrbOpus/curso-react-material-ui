@@ -6,7 +6,7 @@ export const AppRoutes = () => {
 
     return (
         <Routes>
-            <Route path='/home' element={<Button variant="text" color="primary">teste</Button>} />
+            <Route path='/home' element={<div><Button variant="contained" color="primary">teste</Button></div>} />
             <Route path='/cidade' element={<p>Cidades</p>} />
 
 
