@@ -7,11 +7,13 @@
 
 # testing
 /coverage
+/rest-client-http
 
 # production
 /build
 .vscode
 .env
+
 
 # misc
 .DS_Store
