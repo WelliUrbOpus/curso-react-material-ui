@@ -1,5 +1,5 @@
-import { Drawer, Button, Box, useTheme, Avatar, Divider, List, ListItemButton, ListItemText, ListItemIcon, useMediaQuery } from '@mui/material';
-import { Home, Settings, Add, Menu } from '@mui/icons-material';
+import { Drawer,  Box, useTheme, Avatar, Divider, List, ListItemButton, ListItemText, ListItemIcon, useMediaQuery } from '@mui/material';
+import { Home, Settings, Add } from '@mui/icons-material';
 import { useDrawerContext } from '../../contexts';
 import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 
@@ -90,28 +90,8 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({ children }) => {
 
       </Drawer>
 
-      {/*<Drawer open={smDown} variant={'persistent'} >
-
-      <Box width={theme.spacing(10)} height={theme.spacing(10)} display="flex" flexDirection="column">
-        <Box width="100%" height={theme.spacing(5)} display="flex" alignItems="center" justifyContent="center">
-
-          <Button style={{ display: smDown ? 'inline-flex' : 'none' }} variant="contained" color="primary" onClick={toggleDrawerOpen}>
-            <Menu />
-          </Button>
-
-        </Box>
-      </Box>
-      </Drawer>*/}
-
-      <Box height="100vh" marginLeft={smDown ? theme.spacing(0) : theme.spacing(28)}>
-
-        <Button style={{ display: smDown ? 'inline-flex' : 'none' }} variant="contained" color="primary" onClick={toggleDrawerOpen}>
-          <Menu />
-        </Button>
-
-
+      <Box height="100vh" marginLeft={smDown ? theme.spacing(0) : theme.spacing(29)}>
         {children}
-
       </Box>
 
     </>

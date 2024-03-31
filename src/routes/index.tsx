@@ -1,16 +1,11 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Button from '@mui/material/Button';
-import MenuIcon from '@mui/icons-material/Menu';
-import { useAppThemeContext, useDrawerContext } from '../shared/contexts';
-import { Box, useMediaQuery, useTheme } from '@mui/material';
+import {  useDrawerContext } from '../shared/contexts';
 import { useEffect } from 'react';
+import { Dashboard } from '../pages';
 
 
 export const AppRoutes = () => {
-  const { toggleTheme } = useAppThemeContext();
-  const { toggleDrawerOpen, setDrawerOptions } = useDrawerContext();
-  const theme = useTheme();
-  const smDown = useMediaQuery(theme.breakpoints.down('sm'));
+  const {  setDrawerOptions } = useDrawerContext();
 
   useEffect(() => {
     setDrawerOptions([
@@ -34,12 +29,12 @@ export const AppRoutes = () => {
 
   return (
     <Routes>
-      <Route path='/home' element={<>Home</>} />
+      <Route path='/home' element={<Dashboard />} />
 
       <Route path='/settings' element={<>Configurações</>} />
 
       <Route path='/cidades' element={<>Cidades</>} />
-
+ 
       <Route path='*' element={<Navigate to={'/home'} />} />
     </Routes>
 
