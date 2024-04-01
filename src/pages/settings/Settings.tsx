@@ -1,10 +1,10 @@
 import { LayoutBaseDePagina } from '../../shared/layouts';
 
 
-export const Dashboard = () => {
+export const Settings = () => {
   return (
-    <LayoutBaseDePagina titulo='Home'>
-      Testando - Home
+    <LayoutBaseDePagina titulo='Settings'>
+      Testando - Settings
     </LayoutBaseDePagina>
   );
 };

@@ -1,10 +1,10 @@
 import { LayoutBaseDePagina } from '../../shared/layouts';
 
 
-export const Dashboard = () => {
+export const Cidades = () => {
   return (
-    <LayoutBaseDePagina titulo='Home'>
-      Testando - Home
+    <LayoutBaseDePagina titulo='Cidades'>
+      Testando - Cidades
     </LayoutBaseDePagina>
   );
 };
