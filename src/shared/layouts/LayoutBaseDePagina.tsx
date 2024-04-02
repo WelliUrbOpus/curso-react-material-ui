@@ -30,8 +30,7 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({ childre
           variant={smDown ? 'h5' : mdDown ? 'h4' : 'h3'}
           display="flex"
           alignItems="center"
-          height={theme.spacing(12)}
-          color="initial"
+          height={theme.spacing(12)}          
         >
           {titulo}
         </Typography>
